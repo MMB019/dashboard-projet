@@ -4,12 +4,14 @@ import arrow from './arrow.module.css'
 import Subset from './Subset';
 import { useContext } from 'react';
 import { Leftcontext } from '../Context/Leftcontext';
+import { AuthContext } from '../Context/AuthContext';
 
 
 
 const Leftside = () => {
     
     const {showsubparm, outputsubparm, islight, light, dark, link, setlink} = useContext(Leftcontext)
+    const {auth} = useContext(AuthContext)
     const theme = islight ? light : dark
     /*****add on property actif*/
     const setactif = id => {
@@ -28,11 +30,18 @@ const Leftside = () => {
                             {/* <i className='fa fa-user-circle'></i> */}
                             <div className={leftside.img}></div>
                         </div>
-                        <div className={leftside.personel}>
-                            <div style={{fontFamily:'Questrial', fontSize:'20px', fontWeight : '500'}}>Jeune patient</div>
-                            <div style={{color : '#ababab'}}>Admin</div>
+                        
+                            {auth.map(admeach => {
+                                return(
+                                    <div className={leftside.personel}>
+                                         <div style={{fontFamily:'Questrial', fontSize:'20px', fontWeight : '500'}}>{admeach.firstname}</div>
+                                         <div style={{color : '#ababab'}}>{admeach.status}</div>
+                                    </div>
+                                )
+                            })}
+                           
                         </div>
-                    </div>
+                 
                </div>
                 <ul style={{backgroundColor :theme.bg, color : theme.color }} className={leftside.nav}>
                     {

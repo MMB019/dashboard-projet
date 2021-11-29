@@ -1,17 +1,14 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Leftcontext } from "../Context/Leftcontext";
 import classe from './left.module.css'
 const Subset = () => {
-    const [sublink, setsublink]=useState([
-        {id : 1, link: 'User', hash: 'user'},
-        {id : 2, link: 'Ports', hash: 'port'},
-        {id : 3, link: 'Pays', hash: 'harbour'},
-        {id : 4, link: 'Villes', hash: 'down'},
-        {id : 5, link: 'Bureau', hash: 'office'},
-    ])
-    const { islight, light, dark} = useContext(Leftcontext)
+    
+    const { islight, light, dark, sublink, setsublink} = useContext(Leftcontext)
     const theme = islight ? light : dark
+    const setactiftosublink = id => {
+        setsublink(sublink.map(sub => sub.id === id ? {...sub, actif: true} : {...sub, actif : false}))
+    }
     return ( 
         <div className={classe.showparams} >
             <ul>
@@ -19,7 +16,7 @@ const Subset = () => {
                     sublink.map(sub => {
                         return(
                             <Link style={{backgroundColor :theme.bg, color : theme.color }}  to={`/${sub.hash}`}> 
-                                <li> {sub.link} </li> 
+                                <li onClick={()=>setactiftosublink(sub.id)} className={sub.actif && classe.actif}> {sub.link} </li> 
                             </Link>
              
                         )

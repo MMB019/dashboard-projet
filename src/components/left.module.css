@@ -111,3 +111,16 @@ i {
     line-height: 2.8rem;
     font-size: 16px;
   }
+  .showparams ul li.actif {
+      margin-top: 3px;
+    background-color: #e5e5ed;
+    color : #222;
+    
+    padding : 8px;
+    border-radius: 25px 0 0 25px;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    color: rgb(8, 71, 8);
+    
+    border-right: 3px solid rgb(12, 129, 12);
+  }
