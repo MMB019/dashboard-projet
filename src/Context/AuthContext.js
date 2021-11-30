@@ -6,7 +6,7 @@ export const AuthContext = createContext()
 
 const AuthContextProvider = props => {
     const [auth, dispatch] = useReducer(Authreducer, [
-        {id : 1, name :'Bangoura', firstname: 'Jeune patient', username : '...', password : '', status : 'Admin'}
+        {id : 1, name :'Bangoura', firstname: 'Ibrahima Diallo', username : '...', password : '', status : 'Admin'}
     ])
     return ( 
         <AuthContext.Provider value={{auth, dispatch}}>

@@ -33,16 +33,16 @@ const outputsubparm = ()=> {
 }
 // post some articles
 const [article, setarticle] = useState([
-    {id: 1, num : '99', name :'navire', color : '#7fffd4', ink : '#008000'},
-    {id: 2, num : '1000', name :'articles', color :'#00bfff', ink : '#3311a1'},
-    {id: 3, num : '19', name :'shipment', color :"#ffe4c4", ink : '#daa520'}
+    {id: 1, num : '199', name :'navires',icon:"fa fa-ship", color : '#7fffd4', ink : '#008000'},
+    {id: 2, num : '1000', name :'articles',icon:"fa fa-file-excel-o", color :'#00bfff', ink : '#3311a1'},
+    {id: 3, num : '250', name :'Armateurs',icon:"fa fa-sitemap", color :"#ffe4c4", ink : '#daa520'}
 ])
 
 // all the links
 const [link, setlink] = useState([
     {id:1, hash : 'Home', font : 'fa fa-home',href:'home'},
-    {id:2, hash : 'Situation portière', font : 'fa fa-shopping-cart', href:'situation'},
-    {id:3, hash : 'Cumul', font : 'fa fa-file-o', href:'accrued'},
+    {id:2, hash : 'Situation portière', font : 'fa fa-anchor', href:'situation'},
+    {id:3, hash : 'Cumul', font : 'fa fa-file-excel-o', href:'accrued'},
     {id:4, hash : 'Suivis des marchandises', font :'fa fa-map-marker ', href:'invigilate'},
     {id:5, hash : 'Parmetrage', font : 'fa fa-cog', href:'setting'}
 ])
