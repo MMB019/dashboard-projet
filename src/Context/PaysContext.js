@@ -7,7 +7,7 @@ import Leftside from '../components/Leftside';
 import Topright from "../components/Topright";
 import FloatingActionButtons from '../components/FloatingActionButtons';
 
-const PortContext = () => {
+const PaysContext = () => {
     return (
         <div className='app'>
         <AuthContextProvider>
@@ -17,7 +17,7 @@ const PortContext = () => {
                     <Topright/>
                 </div>
                 <div className="parametrage">
-                    <h1>LISTE DES PORTS</h1>
+                    <h1>LISTE DES PAYS</h1>
                     <StickyHeadTable/>
                     <FloatingActionButtons/>
                 </div>
@@ -28,4 +28,4 @@ const PortContext = () => {
     );
 };
 
-export default PortContext;
+export default PaysContext;

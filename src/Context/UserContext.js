@@ -18,7 +18,7 @@ const UserContext = () => {
                     <Topright/>
                 </div>
                 <div className="parametrage">
-                    
+                    <h1>LISTE DES UTILISATEURS</h1>
                     <StickyHeadTable/>
                     <FloatingActionButtons/>
                 </div>

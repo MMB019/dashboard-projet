@@ -50,9 +50,9 @@ const [link, setlink] = useState([
 const [sublink, setsublink]=useState([
     {id : 1, link: 'User', hash: 'user'},
     {id : 2, link: 'Ports', hash: 'port'},
-    {id : 3, link: 'Pays', hash: 'harbour'},
-    {id : 4, link: 'Villes', hash: 'down'},
-    {id : 5, link: 'Bureau', hash: 'office'},
+    {id : 3, link: 'Pays', hash: 'pays'},
+    {id : 4, link: 'Villes', hash: 'villes'},
+    {id : 5, link: 'Bureau', hash: 'bureaux'},
 ])
 
 

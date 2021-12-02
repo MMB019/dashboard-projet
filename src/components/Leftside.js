@@ -22,7 +22,7 @@ const Leftside = () => {
         <div style={{backgroundColor :theme.bg, color : theme.color , borderColor : theme.ui}} className={leftside.leftside}>
             <div  style={{backgroundColor :theme.bg, color : theme.color }} className={leftside.container}>
                 <div style={{fontFamily: 'magmawave caps'}} className={leftside.logomakeup}>
-                    <img src={LOGO} />
+                    <img src={LOGO} height="100px" width="100px" />
                 </div>
                 {/**the status information */}
                <div className={leftside.top}>

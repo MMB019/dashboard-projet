@@ -7,6 +7,9 @@ import HomeContext from "./Context/HomeContext";
 import NotFoundContext from "./Context/NotFoundContext"
 import UserContext from "./Context/UserContext";
 import PortContext from "./Context/PortContext";
+import PaysContext from "./Context/PaysContext";
+import VillesContext from "./Context/VillesContext";
+import BureauContext from "./Context/BureauContext";
 
 
 
@@ -19,6 +22,9 @@ const App = () => {
         <Route path="/home" exact component={HomeContext} />
         <Route path="/user" exact component={UserContext} />
         <Route path="/port" exact component={PortContext} />
+        <Route path="/pays" exact component={PaysContext} />
+        <Route path="/villes" exact component={VillesContext} />
+        <Route path="/bureaux" exact component={BureauContext} />
         <Route path="/" exact component={HomeContext} />
         <Route component={NotFoundContext} />
       </Switch>
