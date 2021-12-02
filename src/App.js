@@ -1,25 +1,29 @@
-import { BrowserRouter as Router, Swictch, Route } from "react-router-dom";
-import Leftside from "./components/Leftside";
+import { BrowserRouter , Switch, Route } from "react-router-dom";
+
 import '../node_modules/font-awesome/css/font-awesome.min.css'
-import LeftContextProvider from "./Context/Leftcontext";
-import Homepage from "./components/Homepage";
+
 import './App.css'
-import AuthContextProvider from "./Context/AuthContext";
+import HomeContext from "./Context/HomeContext";
+import NotFoundContext from "./Context/NotFoundContext"
+import UserContext from "./Context/UserContext";
+import PortContext from "./Context/PortContext";
 
 
 
 const App = () => {
   return (
-    <Router>
-      <div className='app'>
-       <AuthContextProvider>
-        <LeftContextProvider>
-            <Leftside />
-            <Homepage />
-        </LeftContextProvider>
-        </AuthContextProvider>
-      </div>
-    </Router> 
+    
+      <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={HomeContext} />
+        <Route path="/home" exact component={HomeContext} />
+        <Route path="/user" exact component={UserContext} />
+        <Route path="/port" exact component={PortContext} />
+        <Route path="/" exact component={HomeContext} />
+        <Route component={NotFoundContext} />
+      </Switch>
+    </BrowserRouter>
+    
     
    );
 }
