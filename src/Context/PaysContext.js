@@ -1,11 +1,12 @@
 import React from 'react';
 
-import StickyHeadTable from '../components/StickyHeadTable';
+
 import AuthContextProvider from './AuthContext';
 import LeftContextProvider from './Leftcontext';
 import Leftside from '../components/Leftside';
 import Topright from "../components/Topright";
 import FloatingActionButtons from '../components/FloatingActionButtons';
+import TableInter from '../components/TableInter';
 
 const PaysContext = () => {
     return (
@@ -18,7 +19,7 @@ const PaysContext = () => {
                 </div>
                 <div className="parametrage">
                     <h1>LISTE DES PAYS</h1>
-                    <StickyHeadTable/>
+                    <TableInter/>
                     <FloatingActionButtons/>
                 </div>
                 

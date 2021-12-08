@@ -6,6 +6,8 @@ import Leftside from '../components/Leftside';
 import Topright from "../components/Topright";
 import FloatingActionButtons from '../components/FloatingActionButtons';
 
+import TableInter from '../components/TableInter';
+
 
 const VillesContext = () => {
     return (
@@ -18,7 +20,7 @@ const VillesContext = () => {
                 </div>
                 <div className="parametrage">
                     <h1>LISTE DES VILLES</h1>
-                    <StickyHeadTable/>
+                    <TableInter/>
                     <FloatingActionButtons/>
                 </div>
                 

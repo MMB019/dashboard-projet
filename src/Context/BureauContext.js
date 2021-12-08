@@ -5,6 +5,7 @@ import LeftContextProvider from './Leftcontext';
 import Leftside from '../components/Leftside';
 import Topright from "../components/Topright";
 import FloatingActionButtons from '../components/FloatingActionButtons';
+import TableInter from '../components/TableInter';
 
 const BureauContext = () => {
     return (
@@ -17,7 +18,7 @@ const BureauContext = () => {
                 </div>
                 <div className="parametrage">
                     <h1>LISTE DES BUREAUX</h1>
-                    <StickyHeadTable/>
+                    <TableInter/>
                     <FloatingActionButtons/>
                 </div>
                 

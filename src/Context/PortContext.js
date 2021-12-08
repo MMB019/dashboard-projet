@@ -1,11 +1,13 @@
 import React from 'react';
 
-import StickyHeadTable from '../components/StickyHeadTable';
+
 import AuthContextProvider from './AuthContext';
 import LeftContextProvider from './Leftcontext';
 import Leftside from '../components/Leftside';
 import Topright from "../components/Topright";
 import FloatingActionButtons from '../components/FloatingActionButtons';
+import TableInter from '../components/TableInter';
+
 
 const PortContext = () => {
     return (
@@ -18,7 +20,7 @@ const PortContext = () => {
                 </div>
                 <div className="parametrage">
                     <h1>LISTE DES PORTS</h1>
-                    <StickyHeadTable/>
+                    <TableInter/>
                     <FloatingActionButtons/>
                 </div>
                 

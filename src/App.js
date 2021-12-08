@@ -10,6 +10,8 @@ import PortContext from "./Context/PortContext";
 import PaysContext from "./Context/PaysContext";
 import VillesContext from "./Context/VillesContext";
 import BureauContext from "./Context/BureauContext";
+import Userform from "./components/form/Userform";
+import TableInter from "./components/TableInter";
 
 
 
@@ -25,7 +27,8 @@ const App = () => {
         <Route path="/pays" exact component={PaysContext} />
         <Route path="/villes" exact component={VillesContext} />
         <Route path="/bureaux" exact component={BureauContext} />
-        <Route path="/" exact component={HomeContext} />
+        <Route path="/form" exact component={Userform} />
+        <Route path="/table" exact component={TableInter} />
         <Route component={NotFoundContext} />
       </Switch>
     </BrowserRouter>

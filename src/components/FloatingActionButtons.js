@@ -9,7 +9,7 @@ import "./parametrage.css"
 
 export default function FloatingActionButtons() {
   return (
-    <div className="parametrage">
+    <div className="btn-create">
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
             <Fab color="primary" aria-label="add">
                 <AddIcon />

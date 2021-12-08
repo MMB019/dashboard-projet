@@ -11,6 +11,7 @@ import { Leftcontext } from '../Context/Leftcontext';
 import "./parametrage.css"
 import ColorButtons from './ColorButtons';
 import IconButtons from './IconButtons';
+import "./table.css"
 
 const columns = [
   { id: 'name', label: 'Name', minWidth: 170 },
@@ -81,6 +82,19 @@ export default function StickyHeadTable() {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+
+ const get_tablecell=(column,value)=>{
+   if(column.format && typeof value === 'number')
+    {
+          return column.format(value)
+    }else if(value !=="operation")
+    {
+        return value
+    }
+    return ""
+  
+ }
+
   const {islight, light, dark} = React.useContext(Leftcontext)
   const theme = islight ? light : dark
 
@@ -111,10 +125,13 @@ export default function StickyHeadTable() {
                     {columns.map((column) => {
                       const value = row[column.id];
                       return (
-                        <TableCell key={column.id} align={column.align}>
-                          {column.format && typeof value === 'number'
-                            ? column.format(value)
-                            : value ==="operation"?  '<IconButtons/>' : value}
+                        <TableCell key={column.id} align={column.align} className="table-row">
+                          <a href="#">
+                          { get_tablecell(column,value) !== ""? get_tablecell(column,value): 
+                          
+                            '<IconButtons/>'
+                          }
+                          </a>
                         </TableCell>
                       );
                     })}
