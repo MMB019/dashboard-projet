@@ -7,6 +7,8 @@ import Leftside from '../components/Leftside';
 import Topright from "../components/Topright";
 import FloatingActionButtons from '../components/FloatingActionButtons';
 import TableInter from '../components/TableInter';
+import Usersform from '../components/form/Usersform';
+import TablePort from '../components/tables/TablePort';
 
 
 const PortContext = () => {
@@ -20,8 +22,7 @@ const PortContext = () => {
                 </div>
                 <div className="parametrage">
                     <h1>LISTE DES PORTS</h1>
-                    <TableInter/>
-                    <FloatingActionButtons/>
+                    <TablePort/>
                 </div>
                 
             </LeftContextProvider>

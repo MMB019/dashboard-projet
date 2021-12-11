@@ -6,6 +6,8 @@ import Leftside from '../components/Leftside';
 import Topright from "../components/Topright";
 import FloatingActionButtons from '../components/FloatingActionButtons';
 import TableInter from '../components/TableInter';
+import Usersform from '../components/form/Usersform';
+import TableUser from '../components/tables/TableUser';
 
 
 const UserContext = () => {
@@ -20,8 +22,9 @@ const UserContext = () => {
                 </div>
                 <div className="parametrage">
                     <h1>LISTE DES UTILISATEURS</h1>
-                    <TableInter/>
-                    <FloatingActionButtons/>
+                    <TableUser/>
+                    
+
                 </div>
                 
             </LeftContextProvider>

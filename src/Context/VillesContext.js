@@ -1,12 +1,12 @@
 import React from 'react';
-import StickyHeadTable from '../components/StickyHeadTable';
+
 import AuthContextProvider from './AuthContext';
 import LeftContextProvider from './Leftcontext';
 import Leftside from '../components/Leftside';
 import Topright from "../components/Topright";
 import FloatingActionButtons from '../components/FloatingActionButtons';
 
-import TableInter from '../components/TableInter';
+import TableVille from '../components/tables/TableVille';
 
 
 const VillesContext = () => {
@@ -20,8 +20,8 @@ const VillesContext = () => {
                 </div>
                 <div className="parametrage">
                     <h1>LISTE DES VILLES</h1>
-                    <TableInter/>
-                    <FloatingActionButtons/>
+                    <TableVille/>
+                    
                 </div>
                 
             </LeftContextProvider>

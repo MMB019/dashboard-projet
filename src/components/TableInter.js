@@ -18,7 +18,7 @@ const columns: GridColDef[] = [
 export default function TableInter() {
   return (
     <div className="table-param" >
-      <DataGrid rows={rows} columns={columns} />
+      <DataGrid rows={rows} columns={columns} checkboxSelection />
     </div>
   );
 }

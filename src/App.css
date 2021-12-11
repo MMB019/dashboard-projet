@@ -22,3 +22,9 @@
 .parametrage h1{
   text-align: center;
   }
+.userleft {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  box-sizing: border-box;
+}

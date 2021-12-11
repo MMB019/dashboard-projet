@@ -1,0 +1,143 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "lastname": "Diallo",
+      "firstName": "Ibrahima Oury",
+      "username": "di84454@gmail.com",
+      "cma_agency_id": "026 873 5903"
+    },
+    {
+      "id": 2,
+      "lastname": "Barry",
+      "firstName": "moussa",
+      "username": "di84454@gmail.com",
+      "cma_agency_id": "624 82 50 00"
+    },
+    {
+      "id": 5,
+      "lastname": "Bah",
+      "firstName": "Idiatou",
+      "username": "di84454@gmail.com",
+      "cma_agency": "624 82 50 00"
+    },
+    {
+      "id": 1,
+      "lastname": "Diallo",
+      "firstName": "Ibrahima Oury",
+      "username": "di84454@gmail.com",
+      "cma_agency_id": "026 873 5903"
+    },
+    {
+      "id": 2,
+      "lastname": "Barry",
+      "firstName": "moussa",
+      "username": "di84454@gmail.com",
+      "cma_agency_id": "624 82 50 00"
+    },
+    {
+      "id": 5,
+      "lastname": "Bah",
+      "firstName": "Idiatou",
+      "username": "di84454@gmail.com",
+      "cma_agency": "624 82 50 00"
+    }
+    
+  ],
+  "villes":[
+     {
+      "id": 1,
+      "nom": "Dakar",
+      "pays_id": "Senegal",
+      "code": "026 873 5903"
+    },
+ {
+      "id": 2,
+      "nom": "Conakry",
+      "pays_id": "Guinee",
+      "code": "026 873 5903"
+    }
+    ,{
+      "id": 3,
+      "nom": "Dakar",
+      "pays_id": "Senegal",
+      "code": "026 873 5903"
+    }
+    ,{
+      "id": 4,
+      "nom": "Conakry",
+      "pays_id": "Guinee",
+      "code": "026 873 5903"
+    }
+
+  ],
+  "port":[
+    {
+      "id": 1,
+      "nom": "Port",
+      "ville_id": "Guinee",
+      "geopoint_id": "Guinee",
+      "code": "026 873 5903"
+    },
+    {
+      "id": 2,
+      "nom": "Conakry",
+      "ville_id": "Guinee",
+      "geopoint_id": "Guinee",
+      "code": "026 873 5903"
+    },
+    {
+      "id": 3,
+      "nom": "Conakry",
+      "ville_id": "Guinee",
+      "geopoint_id": "Guinee",
+      "code": "026 873 5903"
+    },
+    {
+      "id": 4,
+      "nom": "Conakry",
+      "ville_id": "Guinee",
+      "geopoint_id": "Guinee",
+      "code": "026 873 5903"
+    }
+  ],
+  "pays":[
+    {
+      "id": 1,
+      "nom": "Pays",
+      "zone_id": "Guinee",
+      "code": "026 873 5903"
+    },
+    {
+      "id": 2,
+      "nom": "Conakry",
+      "zone_id": "Guinee",
+      "code": "026 873 5903"
+    },
+    {
+      "id": 3,
+      "nom": "Conakry",
+      "zone_id": "Guinee",
+      "code": "026 873 5903"
+    }
+  ],
+  "bureaux":[
+    {
+      "id": 1,
+      "nom": "Bureau",
+      "port_id": "port",
+      "code": "026 873 5903"
+    },
+    {
+      "id": 2,
+      "nom": "Bureau2",
+      "port_id": "port",
+      "code": "026 873 5903"
+    },{
+      "id": 3,
+      "nom": "Bureau3",
+      "port_id": "port",
+      "code": "026 873 5903"
+    }
+  ]
+}
