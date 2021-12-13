@@ -42,36 +42,41 @@
       "username": "di84454@gmail.com",
       "cma_agency": "624 82 50 00"
     }
-    
   ],
-  "villes":[
-     {
+  "villes": [
+    {
       "id": 1,
       "nom": "Dakar",
       "pays_id": "Senegal",
       "code": "026 873 5903"
     },
- {
+    {
       "id": 2,
       "nom": "Conakry",
       "pays_id": "Guinee",
       "code": "026 873 5903"
-    }
-    ,{
+    },
+    {
       "id": 3,
       "nom": "Dakar",
       "pays_id": "Senegal",
       "code": "026 873 5903"
-    }
-    ,{
+    },
+    {
       "id": 4,
       "nom": "Conakry",
       "pays_id": "Guinee",
       "code": "026 873 5903"
+    },
+    {
+      "nom": "moussa",
+      "code": "6656",
+      "pays": "",
+      "undefined": 1,
+      "id": 5
     }
-
   ],
-  "port":[
+  "port": [
     {
       "id": 1,
       "nom": "Port",
@@ -101,7 +106,7 @@
       "code": "026 873 5903"
     }
   ],
-  "pays":[
+  "pays": [
     {
       "id": 1,
       "nom": "Pays",
@@ -121,7 +126,7 @@
       "code": "026 873 5903"
     }
   ],
-  "bureaux":[
+  "bureaux": [
     {
       "id": 1,
       "nom": "Bureau",
@@ -133,7 +138,8 @@
       "nom": "Bureau2",
       "port_id": "port",
       "code": "026 873 5903"
-    },{
+    },
+    {
       "id": 3,
       "nom": "Bureau3",
       "port_id": "port",

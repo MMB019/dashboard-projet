@@ -15,13 +15,14 @@ export default function Dialogmodal({ open, handleClose, data, onChange, handleS
 
     const { id, nom, ville, code,geopoint_id} = data
     return (
-        <div>
+        <div className="modal-size">
 
             <Dialog
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
+                fullWidth="true"
             >
                 <DialogTitle id="alert-dialog-title">
                     {id ? 'update port' : 'create new port'}

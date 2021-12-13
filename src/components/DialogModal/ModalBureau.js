@@ -14,16 +14,17 @@ export default function Dialogmodal({ open, handleClose, data, onChange, handleS
 
     const { id, nom, port_id, code} = data
     return (
-        <div>
+        <div className="modal-size">
 
             <Dialog
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
+                fullWidth="true"
             >
                 <DialogTitle id="alert-dialog-title">
-                    {id ? 'update ville' : 'create new ville'}
+                    {id ? 'update Bureau' : 'create new Bureau'}
                 </DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">

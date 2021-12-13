@@ -21,6 +21,7 @@ export default function Dialogmodal({ open, handleClose, data, onChange, handleS
                 onClose={handleClose}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
+                fullWidth="true"
             >
                 <DialogTitle id="alert-dialog-title">
                     {id ? 'update ville' : 'create new ville'}

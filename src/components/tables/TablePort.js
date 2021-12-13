@@ -159,9 +159,7 @@ const TablePort= () => {
                 disableColumnReorder={false}
                 pageSize={10}
                 rowsPerPageOptions={[5]}
-                components={{
-                    Toolbar: GridToolbar,
-                  }}
+               
                 checkboxSelection
                 disableSelectionOnClick
             />

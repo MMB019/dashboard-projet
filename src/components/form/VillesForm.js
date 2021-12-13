@@ -45,12 +45,13 @@ const VillesForm = ({data, onChange}) => {
                           subscription={{
                             value : true,
                             error : true,
-                            touched: true
+                            touched: true,
+                            component: true,
                         }}
                          >
                              {({ meta, onChange})=> (
                                  <div>
-                                     <TextField   value={pays_id}   id="pays" onChange={onChange}   margin='dense' placeholder='pays' label='Pays' variant="outlined" fullWidth/>
+                                     <TextField   value={pays_id}   id="pays_id" onChange={onChange}   margin='dense' placeholder='pays' label='Pays' variant="outlined" fullWidth/>
                                      {meta.touched && meta.error && <span style={{color : 'red'}}> {meta.error} </span>}
                                  </div>
                              )}
@@ -64,6 +65,7 @@ const VillesForm = ({data, onChange}) => {
                             value : true,
                             error : true,
                             touched: true
+                        
                         }}
                          >
                              {({ meta, onChange })=> (
