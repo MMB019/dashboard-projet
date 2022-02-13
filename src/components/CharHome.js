@@ -26,7 +26,7 @@ const CharHome = () => {
         //configuration
         const svg= d3.select(pieChart.current).attr('width',200)
         .attr('height',180)
-        .style('background','yellow').append('g')
+        .style('background','white').append('g')
         .attr("transform",'translate(300,300)');
 
 
@@ -37,7 +37,7 @@ const CharHome = () => {
         .join('path')
         .attr('d',arc)
         .attr('fill',(d,i)=>colors(i))
-        .attr('stroke','white');
+        .attr('stroke','blue');
 
 
     },[data]);

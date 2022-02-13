@@ -26,6 +26,7 @@ import Orders from './Orders';
 import { Mail } from '@mui/icons-material';
 import PieHome from '../components/PieHome';
 import CharHome from '../components/CharHome';
+import MapCadre from '../components/MapCadre';
 
 function Copyright(props) {
   return (
@@ -125,7 +126,7 @@ const Home= () => {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Tiger-report
             </Typography>
 
             <IconButton color="inherit">
@@ -199,7 +200,7 @@ const Home= () => {
                     height: 410,
                   }}
                 >
-                  <Chart />
+                  <MapCadre/>
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
@@ -225,7 +226,7 @@ const Home= () => {
                     height: 200,
                   }}
                 >
-                  <Deposits />
+            
                 
                 </Paper>
 
