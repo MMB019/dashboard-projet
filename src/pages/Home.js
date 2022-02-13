@@ -18,14 +18,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
+
 import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
 import { Mail } from '@mui/icons-material';
+import PieHome from '../components/PieHome';
+import CharHome from '../components/CharHome';
 
 function Copyright(props) {
   return (
@@ -94,48 +94,7 @@ const Home= () => {
     setOpen(!open);
   };
 
-  //util pour le menu
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-  const isMenuOpen = Boolean(anchorEl);
-  
-
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
+ 
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -187,8 +146,6 @@ const Home= () => {
                 aria-label="account of current user"
                 aria-haspopup="true"
                 color="inherit"
-                aria-controls={menuId}
-                onClick={handleProfileMenuOpen}
                 >
                 <AccountCircle />
                 </IconButton>
@@ -239,7 +196,7 @@ const Home= () => {
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 410,
                   }}
                 >
                   <Chart />
@@ -249,14 +206,29 @@ const Home= () => {
               <Grid item xs={12} md={4} lg={3}>
                 <Paper
                   sx={{
-                    p: 2,
+                    p: 1,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 200,
+                  }}
+                >
+                  <CharHome/>
+                
+                </Paper>
+                {/*essaie*/}
+                <Paper
+                  sx={{
+                    p: 2,
+                    mt:1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: 200,
                   }}
                 >
                   <Deposits />
+                
                 </Paper>
+
               </Grid>
               {/* Recent Orders */}
               <Grid item xs={12}>
